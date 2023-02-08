@@ -16,7 +16,6 @@ namespace _769
         public string number;
         public Person(string name, T vehicle, string number, string serialEngine)
         {
-            Console.WriteLine("asdfhgj");
             this.vehicle = vehicle;
             this.number = number;
             this.serialEngine = serialEngine;
@@ -134,7 +133,7 @@ namespace _769
             }
         }
     }
-    internal class HW_Module_7
+    internal class Program
     {
         static void Main(string[] args)
         {
@@ -154,7 +153,7 @@ namespace _769
             string serialEnginePavlenko = "XXX123QWERTY345XX";
             Person<Vehicle> Pavlenko = new Person<Vehicle>(namePavlenko, viper, gosNumberPavlenko, serialEnginePavlenko);
             //---------Иванов Иван---------//
-            Motor1 motorPriora = new Motor1(106, 1.6);
+            Motor2 motorPriora = new Motor2(106, 1.6);
             Vehicle priora = new Vehicle(15, 195);
             priora.Marka = "LADA";
             priora.Model = "Priora";
@@ -184,7 +183,6 @@ namespace _769
             Console.WriteLine("\t\tИванов Иван владеет автомобилем: \n{0} \n{1} \nГос. номер: \t{2}", collection[1].vehicle.Marka, collection[1].vehicle.Model, collection[1].number);
             Console.WriteLine("\nТехнические характеристики: \n");
             Console.Write("Объём двигателя: \t   {0} л., ", collection[1].vehicle.Motor.V);
-            collection[1].vehicle.Motor = motor2;
             collection[1].vehicle.Motor.EngineSound();
             Console.WriteLine("Мощность двигателя: \t   {0} л.с.", collection[1].vehicle.Motor.Power);
             Console.WriteLine("Мощность двигателя: \t   {0} л.с.", collection[1].vehicle.Motor.Power);
